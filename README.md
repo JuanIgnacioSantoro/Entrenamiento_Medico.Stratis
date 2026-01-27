@@ -1,2 +1,2 @@
 # Arma3
-Mirones relacionadas a viedeo juego Arma 3.
+Misiones relacionadas a video juego Arma 3.
