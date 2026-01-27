@@ -1,5 +1,5 @@
 PacientesPuesto4 = createGroup west;
-"3_T_Tan" createUnit [ SpawnPaciente4, PacientesPuesto4, "Paciente4 = this; doStop Paciente4"];
+"3_T_Tan" createUnit [ PacienteBot4, PacientesPuesto4, "Paciente4 = this; doStop Paciente4"];
 removeGoggles Paciente4;
 Paciente4 addAction ["Eliminar paciente", "EntrenamientoMedico\EliminarPaciente.sqf"];
 [Paciente4, selectRandom[0.3,0.5,0.7,0.9], "leg_r", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
