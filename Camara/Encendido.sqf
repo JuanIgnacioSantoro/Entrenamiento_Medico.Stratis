@@ -1,0 +1,1 @@
+CreadorPaciente1 setObjectTextureGlobal [0, "#(argb,512,512,1)r2t(cam1rtt,1)"];
