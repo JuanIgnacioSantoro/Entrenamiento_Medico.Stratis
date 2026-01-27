@@ -1,0 +1,1 @@
+CreadorPaciente1 setObjectTextureGlobal [0, "images\SFS_Sangriento.jpg"];

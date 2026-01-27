@@ -1,0 +1,15 @@
+PacientesPuesto1 = createGroup west;
+"3_T_Tan" createUnit [ SpawnPaciente1, PacientesPuesto1, "Paciente1 = this; doStop Paciente1"];
+removeGoggles Paciente1;
+Paciente1 addAction ["Eliminar paciente", "SFS\extra\EntrenamientoMedico\EliminarPaciente.sqf"];
+[Paciente1, selectRandom[0.3,0.5,0.7,0.9], "leg_r", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[Paciente1, selectRandom[0.3,0.5,0.7,0.9], "leg_l", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[Paciente1, selectRandom[0.3,0.5,0.7,0.9], "body", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[Paciente1, selectRandom[0.3,0.5,0.7,0.9], "head", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[Paciente1, selectRandom[0.3,0.5,0.7,0.9], "hand_r", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+[Paciente1, selectRandom[0.3,0.5,0.7,0.9], "hand_l", selectrandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
+hint 'Tu paciente esta listo.';
+waitUntil {(!alive Paciente1)};
+hint 'Tu paciente ha muerto';	
+sleep 5;
+deletevehicle Paciente1;
